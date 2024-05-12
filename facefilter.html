@@ -1,0 +1,125 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-face-aframe.prod.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+	const list = ["amogus","Big_chungus","elgato","fazbear", "roblox", "skibidi", "squidward" ,"toothless","tf","noway"];
+	const visibles = [false, false, false , false, false, false, false, false, false, false];
+	const setVisible = (button, entities, visible) => {
+	  if (visible) {
+	    button.classList.add("selected");
+	  } else {
+	    button.classList.remove("selected");
+	  }
+	  entities.forEach((entity) => {
+	    entity.setAttribute("visible", visible);
+	  });
+	}
+	list.forEach((item, index) => {
+	  const button = document.querySelector("#" + item);
+	  const entities = document.querySelectorAll("." + item + "-entity");
+	  setVisible(button, entities, visibles[index]);
+	  button.addEventListener('click', () => {
+	    visibles[index] = !visibles[index];
+	    setVisible(button, entities, visibles[index]);
+	  });
+	});
+      })
+    </script>
+    <style>
+      body {
+        margin: 0;
+      }
+      .example-container {
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .options-panel {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 2;
+      }
+      .options-panel img {
+	border: solid 2px;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	cursor: pointer;
+      }
+      .options-panel img.selected {
+	border-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="example-container">
+      <div class="options-panel">
+	<img id="amogus" src="./images/Thumbnail/amogus.png"/>
+	<img id="Big_chungus" src="./images/Thumbnail/Big_chungus.png"/>
+	<img id="elgato" src="./images/Thumbnail/elgato.png"/>
+	<img id="fazbear" src="./images/Thumbnail/fazbear.png"/>
+	<img id="roblox" src="./images/Thumbnail/roblox.png"/>
+    <img id="skibidi" src="./images/Thumbnail/skibidi.png"/>
+    <img id="squidward" src="./images/Thumbnail/squidward.png"/>
+    <img id="toothless" src="./images/Thumbnail/toothless.png"/>
+    <img id="tf" src="./images/Thumbnail/tf.png"/>
+    <img id="noway" src="./images/photo/noway.png">
+      </div>
+      <a-scene mindar-face embedded color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        <a-assets>
+            <a-asset-item id="amogus_mod" src="./tugas/amogus/scene.gltf"></a-asset-item>
+            <a-asset-item id="Big_chungus_mod" src="./tugas/Big_chungus/scene.gltf"></a-asset-item>
+            <a-asset-item id="elgato_mod" src="./tugas/elgato/scene.gltf"></a-asset-item>
+            <a-asset-item id="fazbear_mod" src="./tugas/fazbear/scene.gltf"></a-asset-item>
+            <a-asset-item id="roblox_mod" src="./tugas/roblox/scene.gltf"></a-asset-fitem>
+            <a-asset-item id="skibidi_mod" src="./tugas/skibidi/scene.gltf"></a-asset-item>
+            <a-asset-item id="squidward_mod" src="./tugas/squidward/scene.gltf"></a-asset-item>
+            <a-asset-item id="toothless_mod" src="./tugas/toothless/scene.gltf"></a-asset-item>
+            <a-asset-item id="tf_mod" src="./tugas/tf/scene.gltf"></a-asset-item>
+            <img id="noway_mod" src="./images/photo/noway.png">
+         </a-assets>
+        <a-camera active="false" position="0 0 0"></a-camera>
+	<!-- head occluder -->
+        <a-entity mindar-face-target="anchorIndex: 168">
+	  <a-gltf-model mindar-face-occluder position="0 -0.3 0.15"rotation="0 0 0" scale="0.065 0.065 0.065" src="#headModel"></a-gltf-model>
+        </a-entity>
+        <a-entity mindar-face-target="anchorIndex: 10">
+	  <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.005 0.005 0.005" src="#amogus_mod" class="amogus-entity" visible="false"></a-gltf-model>
+        </a-entity>
+        <a-entity mindar-face-target="anchorIndex: 10">
+	  <a-gltf-model rotation="0 0 0" position="0 0.3 0 " scale="0.75 0.75 0.75" src="#Big_chungus_mod" class="Big_chungus-entity" visible="false"></a-gltf-model>
+        </a-entity>
+        <a-entity mindar-face-target="anchorIndex: 10">
+	  <a-gltf-model rotation="0 0 0" position="0 0.2 0" scale="0.02 0.02 0.02" src="#elgato_mod" class="elgato-entity" visible="false"></a-gltf-model>
+        </a-entity>
+        <a-entity mindar-face-target="anchorIndex: 10">
+	  <a-gltf-model rotation="0 0 0" position="0.1 0.5 0" scale="1.5 1.5 1.5" src="#fazbear_mod" class="fazbear-entity" visible="false"></a-gltf-model>
+        </a-entity>
+        <a-entity mindar-face-target="anchorIndex: 10">
+	  <a-gltf-model rotation="0 90 0" position="-2.5 -2.5 -6.7" scale="0.9 0.9 0.9" src="#roblox_mod" class="roblox-entity" visible="false"></a-gltf-model>
+        </a-entity>
+        <a-entity mindar-face-target="anchorIndex: 10">
+	  <a-gltf-model rotation="0 0 0" position="0 -3.5 -2" scale="0.9 0.9 0.9" src="#skibidi_mod" class="skibidi-entity" visible="false"></a-gltf-model>
+        </a-entity>
+        <a-entity mindar-face-target="anchorIndex: 168">
+	  <a-gltf-model rotation="0 0 0" position="0 -1 0" scale="0.02 0.02 0.02" src="#squidward_mod" class="squidward-entity" visible="false"></a-gltf-model>
+        </a-entity>
+        <a-entity mindar-face-target="anchorIndex: 10">
+	  <a-gltf-model rotation="0 0 0" position="0 0 0" scale="0.5 0.5 0.5" src="#toothless_mod" class="toothless-entity" visible="false"></a-gltf-model>
+        </a-entity>
+        <a-entity mindar-face-target="anchorIndex: 168">
+	  <a-gltf-model rotation="0 180 0" position="0.3 0 0.9" scale="4 4 4" src="#tf_mod" class="tf-entity" visible="false"></a-gltf-model>
+        </a-entity>
+        <a-entity mindar-face-target="anchorIndex: 1">
+      <a-image rotation="0 0 0" width="4" height="2" position="0.2 0.3 0.2" src="#noway_mod" class="noway-entity" visible="false">
+        </a-entity>
+      </a-scene>
+    </div>
+  </body>
+</html>
