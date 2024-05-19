@@ -1,0 +1,60 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scan kartu anjay wowowow</title>
+        <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+    </head>
+    
+    <body>
+        <a-scene mindar-image="imageTargetSrc: ./images/target-images.mind;  maxTrack: 3" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled:
+        false" device-orientation-permission-ui="enabled: false" >
+            <a-assets>
+                <a-asset-item id="amogus" src="./tugas/amogus/scene.gltf"></a-asset-item>
+                <a-asset-item id="Big_chungus" src="./tugas/Big_chungus/scene.gltf"></a-asset-item>
+                <a-asset-item id="elgato" src="./tugas/elgato/scene.gltf"></a-asset-item>
+                <a-asset-item id="fazbear" src="./tugas/fazbear/scene.gltf"></a-asset-item>
+                <a-asset-item id="roblox" src="./tugas/roblox/scene.gltf"></a-asset-fitem>
+                <a-asset-item id="skibidi" src="./tugas/skibidi/scene.gltf"></a-asset-item>
+                <a-asset-item id="squidward" src="./tugas/squidward/scene.gltf"></a-asset-item>
+                <a-asset-item id="toothless" src="./tugas/toothless/scene.gltf"></a-asset-item>
+                <a-asset-item id="tf" src="./tugas/tf/scene.gltf"></a-asset-item>
+                <img id="noway" src="./images/photo/noway.png">
+            </a-assets>
+            <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+            <a-entity mindar-image-target="targetIndex: 0">
+                <a-gltf-model src="#amogus" rotation="0 0 0" position="0 0 1" scale="0.005 0.005 0.005"> 
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 1">
+                <a-gltf-model rotation="0 0 0" position="0 -0.2 0.2" scale="0.5 0.5 0.5" src="#Big_chungus" > 
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 2">
+                <a-gltf-model src="#elgato" rotation="0 0 0" position="0 0 0" scale="0.03 0.03 0.03"> 
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 3">
+                <a-gltf-model src="#fazbear" rotation="0 0 0" position="0 0 0" scale="1.5 1.5 1.5"> 
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 4">
+                <a-gltf-model src="#roblox" rotation="-90 0 0" position="3 0 0" scale="0.5 0.5 0.5"> 
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 5">
+                <a-gltf-model src="#skibidi" rotation="0 0 0" position="0 0 0" scale="0.5 0.5 0.5"> 
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 6">
+                <a-gltf-model src="#squidward" rotation="0 0 0" position="0 0 0" scale="0.02 0.02 0.02"> 
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 7">
+                <a-gltf-model src="#tf" rotation="0 180 0" position="0 0 0" scale="1.5 1.5 1.5"> 
+            </a-entity>
+            <a-entity mindar-image-target="targetIndex: 8">
+                <a-gltf-model rotation="0 0 0" position="0 0 0" scale="1 1 1"src="#toothless" > 
+            </a-entity>
+                <a-entity mindar-image-target="targetIndex: 9">
+                <a-image src="#noway" rotation="0 0 0" width="2" height="1" position="0 0 0" ></a-image>
+            </a-entity>
+            
+        </a-scene>
+    </body>
+</html>
