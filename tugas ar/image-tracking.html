@@ -5,9 +5,33 @@
         <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v7.0.0/dist/aframe-extras.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+   <style>
+            .buttons {
+                position: absolute;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 10;
+                padding: 0.25em;
+                border-radius: 4px;
+                border: none;
+                width: 10em;
+                height: 4em;
+                background: rgb(65, 27, 199);
+                color: rgb(255, 255, 255);
+                top: 20em;
+                right: 34em;
+            }       
+        </style>
     </head>
     
     <body>
+        <a href="https://seandro.github.io/AR/tugas%20ar/UI_AR.html">
+            <div class="buttons">
+                <button class="button">START!</button>
+            </div>
+        </a>
         <a-scene mindar-image="imageTargetSrc: ./images/target-images.mind;  maxTrack: 3" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled:
         false" device-orientation-permission-ui="enabled: false" >
             <a-assets>
