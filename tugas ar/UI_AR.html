@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Correcting zooming issue -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>WebAR: UI using CSS</title>
+     <style>
+        /* Mengatur posisi elemen pada halaman */
+        
+        #UI {
+            position: absolute;
+            top: 4em;
+            right: 8em;
+        }
+        /* Styling */
+        
+        #UI {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            font-weight: 400;
+            text-align: center;
+            color: rgb(231, 231, 231);
+            background-color: rgb(11, 78, 223) ;
+            display: block;
+            width: 10em;
+        }
+        
+        .buttons {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            padding: 0.25em;
+            border-radius: 4px;
+            border: none;
+            width: 10em;
+            height: 4em;
+        }
+        
+        .start {
+            background: rgb(65, 27, 199);
+            color: rgb(255, 255, 255);
+            top: 20em;
+            right: 34em;
+        }
+
+        .kartu {
+            background: rgb(25, 145, 219);
+            color: rgb(255, 255, 255);
+            top: 25em;
+            right: 34em;
+        }
+
+        body{
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-image: url('https://raw.githubusercontent.com/seandro/AR/main/tugas%20ar/images/photo/Screenshot%202024-05-26%20204829.png');
+        }
+    
+    </style>
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded vr-mode-ui="enabled: false" arjs='debugUIEnabled: false;'>
+
+        <!-- add a hiro marker-->
+        <a-marker preset="hiro">
+            <a-box position="0 0.5 0" material="color: green; opacity: 0.5;">
+                <a-text value="Marker Hiro" position="0 0.55 0" rotation="-90 0 0" color="magenta" align="center"></a-text>
+            </a-box>
+        </a-marker>
+    </a-scene>
+
+    <!-- UI Element outside a-scene -->
+    <div id="UI">SIAPKAN KARTU UNTUK DISCAN</div>
+    <a href="https://seandro.github.io/AR/tugas%20ar/image-tracking.html">
+    <div class="buttons start">
+        <button class="button start">START!</button>
+    </div>
+    </a>
+
+    <a href="https://github.com/seandro/AR/blob/e4e8bae9843aba1676c991e8420e9f0bdfd2f581/tugas%20ar/images/TARGET%20CARD.pdf" target="_blank">
+        <div class="buttons kartu">
+            <button class="button kartu">KARTU!</button>
+        </div>
+    </a>
+
+    <script>
+        window.onload = function() {
+            document
+                .querySelector(".start")
+                .addEventListener("click", function() {
+                    // here you can change also a-scene or a-entity properties, like
+                    // changing your 3D model source, size, position and so on
+                    // or you can just open links, trigger actions...
+                    alert("Opening camera....");
+                });
+        };
+    </script>
+    <!-- reference: https://ar-js-org.github.io/AR.js-Docs/ui-events/ -->
+
+</body>
+
+</html>
