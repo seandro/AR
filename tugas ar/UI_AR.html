@@ -11,12 +11,8 @@
         
         #UI {
             position: absolute;
-            top: 4em;
+            top: 2em;
             right: 8em;
-        }
-        /* Styling */
-        
-        #UI {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 3em;
             font-weight: 400;
@@ -59,34 +55,23 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
-            background-image: url('https://raw.githubusercontent.com/seandro/AR/main/tugas%20ar/images/photo/Screenshot%202024-05-26%20204829.png');
+            background-image: url('https://raw.githubusercontent.com/seandro/AR/main/tugas%20ar/images/photo/wide%20rabbit.gif');
         }
     
     </style>
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
-    <a-scene embedded vr-mode-ui="enabled: false" arjs='debugUIEnabled: false;'>
-
-        <!-- add a hiro marker-->
-        <a-marker preset="hiro">
-            <a-box position="0 0.5 0" material="color: green; opacity: 0.5;">
-                <a-text value="Marker Hiro" position="0 0.55 0" rotation="-90 0 0" color="magenta" align="center"></a-text>
-            </a-box>
-        </a-marker>
-    </a-scene>
-
-    <!-- UI Element outside a-scene -->
     <div id="UI">SIAPKAN KARTU UNTUK DISCAN</div>
     <a href="https://seandro.github.io/AR/tugas%20ar/image-tracking.html">
     <div class="buttons start">
-        <button class="button start">START!</button>
+        <p>START!</p>
     </div>
     </a>
 
-    <a href="https://github.com/seandro/AR/blob/e4e8bae9843aba1676c991e8420e9f0bdfd2f581/tugas%20ar/images/TARGET%20CARD.pdf" target="_blank">
+    <a href="https://seandro.github.io/AR/tugas%20ar/guide.html>
         <div class="buttons kartu">
-            <button class="button kartu">KARTU!</button>
+            <p>Petunjuk / Guide<p>
         </div>
     </a>
 
@@ -105,5 +90,4 @@
     <!-- reference: https://ar-js-org.github.io/AR.js-Docs/ui-events/ -->
 
 </body>
-
 </html>
