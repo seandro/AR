@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Correcting zooming issue -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>WebAR: UI using CSS</title>
+     <style>
+        /* Mengatur posisi elemen pada halaman */
+        
+        #UI {
+            position: absolute;
+            top: 0.5em;
+            left: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 4em;
+            font-weight: 400;
+            text-align: center;
+            color: rgb(231, 231, 231);
+            background-color: rgb(11, 78, 223) ;
+            display: block;
+            width: 10em;
+            border-radius: 5px;
+        }
+        
+        .buttons {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial;
+            font-size: 4em;
+            width: 2em;
+            height: 1.2em;
+            background: rgb(11, 78, 223);
+            color: rgb(255, 255, 255);
+            bottom:0.5em;
+            left: 1em;
+            border-radius: 5px;
+        }
+
+        body{
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: gray;
+        }
+        .text{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            font-family: Arial;
+            font-size: 2em;
+            width: 30em;
+            height: 8em;
+            background: rgb(11, 78, 223);
+            color: rgb(255, 255, 255);
+            top:4em;
+            left: 2em;
+        }
+        .kartu:link, .kartu:visited {
+        color: red;
+        }
+
+        .kartu:hover, .kartu:active {
+        color: pink;
+        }
+    
+    </style>
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+    
+    <div id="UI">Petunjuk / Guide</div>
+
+    <a href="https://seandro.github.io/AR/tugas%20ar/UI_AR.html">
+        <div  class="buttons">
+            <p><<p>
+        </div>
+    </a>
+    <div class="text">
+    <ol>
+    <li>Siapkan kartu/gambar untuk discan, kartu bisa didownload <a class="kartu" href="https://github.com/seandro/AR/blob/e4e8bae9843aba1676c991e8420e9f0bdfd2f581/tugas%20ar/images/TARGET%20CARD.pdf" target="_blank">disini</a></li>
+    <li>Letakan kartu di bidang datar</li>
+    <li>Arahkan kamera ke kartu (pastikan kartu terlihat jelas dan berada ditengah kamera)</li>
+    <li>Tunggu beberapa saat dan gambar akan muncul di layar anda </li>
+    </ol>
+    </div>
+</body>
+
+</html>
