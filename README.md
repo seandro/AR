@@ -4,7 +4,9 @@ Selamat datang di repository proyek Augmented Reality! Ini adalah Image Tracking
 
 ## Kode QR
 <p align="center">
-  <img src="/tugas%20ar/images/QR_Images.png" alt="QR Code" width="200">
+  <a href="seandro.github.io/AR/tugas%20ar/UI_AR.html">
+    <img src="/tugas%20ar/images/QR_Images.png" alt="QR Code" width="200">
+  </a>
 </p>
 
 
