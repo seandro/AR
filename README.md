@@ -1,9 +1,5 @@
 # Project Augmented Reality
 
-<p align="center">
-  <img src="assets2/logoarrizki.png" alt="Project Logo" width="200">
-</p>
-
 Selamat datang di repository proyek Augmented Reality! Ini adalah Image Tracking, salah satu teknik kunci dalam teknologi AR. Teknik ini memungkinkan perangkat AR untuk mengenali dan melacak gambar tertentu di dunia nyata, kemudian menambahkan elemen digital di atas gambar tersebut. Dengan Image Tracking, perangkat AR dapat mendeteksi pola atau fitur unik dari gambar yang telah diprogram sebelumnya, memproses informasi tersebut, dan menambahkan konten digital secara akurat di lokasi yang tepat.
 
 ## Video Demo
@@ -12,7 +8,7 @@ Berikut adalah demo singkat untuk cara menggunakan aplikasi sederhanaini:
 
 <p align="center">
   <a href="https://youtu.be/bQGo939faqs">
-    <img src="img/thubnail.png" alt="Demo Video" width="1000">
+    LINK DEMO
   </a>
 </p>
 
