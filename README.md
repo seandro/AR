@@ -34,12 +34,12 @@ Berikut adalah beberapa contoh dari model yang ditampilkan:
 
 ### Dokumentasi 3
 <p align="center">
-  <img src="/tugas%20ar/images/Thumbnail/skibidi.png" width="600">
+  <img src="/tugas%20ar/images/Thumbnail/Big_chungus.png" width="600">
 </p>
 
 ### Dokumentasi 4
 <p align="center">
-  <img src="/tugas%20ar/images/Thumbnail/roblox.png" width="600">
+  <img src="/tugas%20ar/images/Thumbnail/elgato.png" width="600">
 </p>
 
 
