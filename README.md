@@ -15,7 +15,7 @@ Selamat datang di repository proyek Augmented Reality! Ini adalah Image Tracking
 Berikut adalah demo singkat untuk cara menggunakan aplikasi sederhana ini:
 
 <p align="center">
-  <a href="https://youtu.be/bQGo939faqs">
+  <a href="https://www.youtube.com/watch?v=uCiHncjnCo8">
     LINK DEMO
   </a>
 </p>
