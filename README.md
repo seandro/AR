@@ -24,22 +24,22 @@ Berikut adalah beberapa contoh dari model yang ditampilkan:
 
 ### Model 1
 <p align="center">
-  <img src="/tugas%20ar/images/Thumbnail/toothless.png" width="600">
+  <img src="/tugas%20ar/images/Thumbnail/toothless.png" width="450">
 </p>
 
 ### Model 2
 <p align="center">
-  <img src="/tugas%20ar/images/Thumbnail/squidward.png" width="600">
+  <img src="/tugas%20ar/images/Thumbnail/squidward.png" width="450">
 </p>
 
-### Dokumentasi 3
+### Model 3
 <p align="center">
-  <img src="/tugas%20ar/images/Thumbnail/Big_chungus.png" width="600">
+  <img src="/tugas%20ar/images/Thumbnail/Big_chungus.png" width="450">
 </p>
 
-### Dokumentasi 4
+### Model 4
 <p align="center">
-  <img src="/tugas%20ar/images/Thumbnail/elgato.png" width="600">
+  <img src="/tugas%20ar/images/Thumbnail/elgato.png" width="450">
 </p>
 
 
